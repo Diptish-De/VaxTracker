@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immunization & Healthcare Advisory</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <script src="scripts.js" defer></script> <!-- Link to external JavaScript -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <h1>VaxTracker</h1>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#vaccine-section">Vaccination & Info</a></li> <!-- Combined Section -->
+                <li><a href="#consultation-community-contact">Consultation & Contact</a></li> <!-- Combined Consultation, Forum & Contact -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h2>Welcome to Your Child's Health Dashboard</h2>
+            <p>Track vaccinations, get medical advice, and stay informed.</p>
+        </div>
+    </header>
+
+    <!-- Personalized Dashboard Section -->
+    <section id="dashboard">
+        <div class="container">
+            <h2>Personalized Dashboard</h2>
+            <div class="dashboard-content">
+                <div class="profile-card">
+                    <h3>Child's Profile</h3>
+                    <img src="Untitled design (3).png" alt="Child's Photo" class="child-photo">
+                    <p>Name: <strong>RCC-IITians</strong></p>
+                    <p>Date of Birth: <strong>01/08/2024</strong></p>
+                    <p>Next Vaccination: <strong>Polio - 01/09/2024</strong></p>
+                </div>
+                <div class="progress-chart">
+                    <h3>Vaccination Progress</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 69%;"></div>
+                    </div>
+                    <p>Progress: 69%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Combined Vaccination Schedule and Vaccine Information Section -->
+    <section id="vaccine-section">
+        <div class="container">
+            <!-- Vaccination Schedule Section -->
+            <section id="vaccination-schedule">
+                <h2>Vaccination Schedule</h2>
+                <div class="schedule-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>S.No.</th>
+                                <th>Vaccine</th>
+                                <th>Age</th>
+                                <th>Notes</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Completed Vaccinations -->
+                            <tr class="completed-row">
+                                <td>1</td>
+                                <td>BCG</td>
+                                <td>At birth</td>
+                                <td>Prevents tuberculosis</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr class="completed-row">
+                                <td>2</td>
+                                <td>OPV 0</td>
+                                <td>At birth</td>
+                                <td>Prevents polio</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr class="completed-row">
+                                <td>3</td>
+                                <td>Hepatitis B (1st dose)</td>
+                                <td>At birth</td>
+                                <td>Prevents Hepatitis B</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr class="completed-row">
+                                <td>4</td>
+                                <td>DTP 1</td>
+                                <td>6 weeks</td>
+                                <td>Prevents diphtheria, pertussis, and tetanus</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr class="completed-row">
+                                <td>5</td>
+                                <td>Hepatitis B (2nd dose)</td>
+                                <td>6 weeks</td>
+                                <td>Booster dose</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr class="completed-row">
+                                <td>6</td>
+                                <td>Hib 1</td>
+                                <td>6 weeks</td>
+                                <td>Prevents meningitis and pneumonia</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr class="completed-row">
+                                <td>7</td>
+                                <td>IPV 1</td>
+                                <td>6 weeks</td>
+                                <td>Prevents polio</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr class="completed-row">
+                                <td>8</td>
+                                <td>Rotavirus 1</td>
+                                <td>6 weeks</td>
+                                <td>Prevents severe diarrhea</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr class="completed-row">
+                                <td>9</td>
+                                <td>PCV 1</td>
+                                <td>6 weeks</td>
+                                <td>Prevents pneumonia and other infections</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr class="completed-row">
+                                <td>10</td>
+                                <td>DTP 2</td>
+                                <td>10 weeks</td>
+                                <td>Booster dose</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr class="completed-row">
+                                <td>11</td>
+                                <td>Hepatitis B (3rd dose)</td>
+                                <td>10 weeks</td>
+                                <td>Booster dose</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr class="completed-row">
+                                <td>12</td>
+                                <td>Hib 2</td>
+                                <td>10 weeks</td>
+                                <td>Booster dose</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr class="completed-row">
+                                <td>13</td>
+                                <td>IPV 2</td>
+                                <td>10 weeks</td>
+                                <td>Booster dose</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr class="completed-row">
+                                <td>14</td>
+                                <td>Rotavirus 2</td>
+                                <td>10 weeks</td>
+                                <td>Booster dose</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr class="completed-row">
+                                <td>15</td>
+                                <td>PCV 2</td>
+                                <td>10 weeks</td>
+                                <td>Booster dose</td>
+                                <td>Completed</td>
+                            </tr>
+                            <!-- Upcoming Vaccinations -->
+                            <tr class="upcoming-row">
+                                <td>16</td>
+                                <td>DTP 3</td>
+                                <td>14 weeks</td>
+                                <td>Booster dose</td>
+                                <td>Upcoming</td>
+                            </tr>
+                            <tr class="upcoming-row">
+                                <td>17</td>
+                                <td>Hepatitis B (4th dose)</td>
+                                <td>14 weeks</td>
+                                <td>Booster dose</td>
+                                <td>Upcoming</td>
+                            </tr>
+                            <tr class="upcoming-row">
+                                <td>18</td>
+                                <td>Hib 3</td>
+                                <td>14 weeks</td>
+                                <td>Booster dose</td>
+                                <td>Upcoming</td>
+                            </tr>
+                            <tr class="upcoming-row">
+                                <td>19</td>
+                                <td>IPV 3</td>
+                                <td>14 weeks</td>
+                                <td>Booster dose</td>
+                                <td>Upcoming</td>
+                            </tr>
+                            <tr class="upcoming-row">
+                                <td>20</td>
+                                <td>Rotavirus 3</td>
+                                <td>14 weeks</td>
+                                <td>Booster dose</td>
+                                <td>Upcoming</td>
+                            </tr>
+                            <tr class="upcoming-row">
+                                <td>21</td>
+                                <td>PCV 3</td>
+                                <td>14 weeks</td>
+                                <td>Booster dose</td>
+                                <td>Upcoming</td>
+                            </tr>
+                            <tr class="upcoming-row">
+                                <td>22</td>
+                                <td>Measles 1</td>
+                                <td>9 months</td>
+                                <td>Prevents measles</td>
+                                <td>Upcoming</td>
+                            </tr>
+                            <tr class="upcoming-row">
+                                <td>23</td>
+                                <td>Typhoid 1</td>
+                                <td>9 months</td>
+                                <td>Prevents typhoid fever</td>
+                                <td>Upcoming</td>
+                            </tr>
+                            <tr class="upcoming-row">
+                                <td>24</td>
+                                <td>MMR 1</td>
+                                <td>12 months</td>
+                                <td>Prevents measles, mumps, and rubella</td>
+                                <td>Upcoming</td>
+                            </tr>
+                            <tr class="upcoming-row">
+                                <td>25</td>
+                                <td>Hepatitis A 1</td>
+                                <td>12 months</td>
+                                <td>Prevents Hepatitis A</td>
+                                <td>Upcoming</td>
+                            </tr>
+                            <tr class="upcoming-row">
+                                <td>26</td>
+                                <td>Varicella 1</td>
+                                <td>12 months</td>
+                                <td>Prevents chickenpox</td>
+                                <td>Upcoming</td>
+                            </tr>
+                            <tr class="upcoming-row">
+                                <td>27</td>
+                                <td>DTP Booster 1</td>
+                                <td>18 months</td>
+                                <td>Booster dose</td>
+                                <td>Upcoming</td>
+                            </tr>
+                            <tr class="upcoming-row">
+                                <td>28</td>
+                                <td>Hepatitis A 2</td>
+                                <td>18 months</td>
+                                <td>Booster dose</td>
+                                <td>Upcoming</td>
+                            </tr>
+                            <tr class="upcoming-row">
+                                <td>29</td>
+                                <td>Typhoid 2</td>
+                                <td>2 years</td>
+                                <td>Booster dose</td>
+                                <td>Upcoming</td>
+                            </tr>
+                            <tr class="upcoming-row">
+                                <td>30</td>
+                                <td>MMR 2</td>
+                                <td>5 years</td>
+                                <td>Booster dose</td>
+                                <td>Upcoming</td>
+                            </tr>
+                            <tr class="upcoming-row">
+                                <td>31</td>
+                                <td>DTP Booster 2</td>
+                                <td>5 years</td>
+                                <td>Booster dose</td>
+                                <td>Upcoming</td>
+                            </tr>
+                            <tr class="upcoming-row">
+                                <td>32</td>
+                                <td>Typhoid Booster</td>
+                                <td>6 years</td>
+                                <td>Booster dose</td>
+                                <td>Upcoming</td>
+                            </tr>
+                            <tr class="upcoming-row">
+                                <td>33</td>
+                                <td>Flu Vaccine</td>
+                                <td>Seasonal</td>
+                                <td>Prevents seasonal flu</td>
+                                <td>Upcoming</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+
+            <!-- Vaccine Information Section -->
+            <div class="vaccine-info-row">
+                <section class="vaccine-info-section">
+                    <h2>Vaccine Information</h2>
+                    <div class="vaccine-info-container">
+                        <!-- Vaccine Information Cards -->
+                        <div class="vaccine-info-card">
+                            <h3>BCG</h3>
+                            <p>BCG vaccine is used to prevent tuberculosis.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>OPV 0</h3>
+                            <p>Oral polio vaccine to prevent polio in infants.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>Hepatitis B (1st dose)</h3>
+                            <p>Prevents Hepatitis B.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>DTP 1</h3>
+                            <p>Prevents diphtheria, pertussis, and tetanus.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>Hepatitis B (2nd dose)</h3>
+                            <p>Booster dose for Hepatitis B.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>Hib 1</h3>
+                            <p>Prevents meningitis and pneumonia.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>IPV 1</h3>
+                            <p>Prevents polio.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>Rotavirus 1</h3>
+                            <p>Prevents severe diarrhea.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>PCV 1</h3>
+                            <p>Prevents pneumonia and other infections.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>DTP 2</h3>
+                            <p>Booster dose for diphtheria, pertussis, and tetanus.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>Hepatitis B (3rd dose)</h3>
+                            <p>Booster dose for Hepatitis B.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>Hib 2</h3>
+                            <p>Booster dose for meningitis and pneumonia.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>IPV 2</h3>
+                            <p>Booster dose for polio.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>Rotavirus 2</h3>
+                            <p>Booster dose for severe diarrhea.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>PCV 2</h3>
+                            <p>Booster dose for pneumonia and other infections.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>DTP 3</h3>
+                            <p>Booster dose for diphtheria, pertussis, and tetanus.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>Hepatitis B (4th dose)</h3>
+                            <p>Booster dose for Hepatitis B.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>Hib 3</h3>
+                            <p>Booster dose for meningitis and pneumonia.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>IPV 3</h3>
+                            <p>Booster dose for polio.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>Rotavirus 3</h3>
+                            <p>Booster dose for severe diarrhea.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>PCV 3</h3>
+                            <p>Booster dose for pneumonia and other infections.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>Measles 1</h3>
+                            <p>Prevents measles.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>Typhoid 1</h3>
+                            <p>Prevents typhoid fever.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>MMR 1</h3>
+                            <p>Prevents measles, mumps, and rubella.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>Hepatitis A 1</h3>
+                            <p>Prevents Hepatitis A.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>Varicella 1</h3>
+                            <p>Prevents chickenpox.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>DTP Booster 1</h3>
+                            <p>Booster dose for diphtheria, pertussis, and tetanus.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>Hepatitis A 2</h3>
+                            <p>Booster dose for Hepatitis A.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>Typhoid 2</h3>
+                            <p>Booster dose for typhoid fever.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>MMR 2</h3>
+                            <p>Booster dose for measles, mumps, and rubella.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>DTP Booster 2</h3>
+                            <p>Booster dose for diphtheria, pertussis, and tetanus.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>Typhoid Booster</h3>
+                            <p>Booster dose for typhoid fever.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="vaccine-info-card">
+                            <h3>Flu Vaccine</h3>
+                            <p>Prevents seasonal flu.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Combined Online Consultation, Community Forum, and Contact Us Section -->
+    <section id="consultation-community-contact">
+        <div class="consultation-section">
+            <h2>Online Consultation</h2>
+            <p>Get expert advice from healthcare professionals about your child's vaccinations and health.</p>
+            <a href="#" class="btn">Start Consultation</a>
+        </div>
+
+        <div class="community-forum-section">
+            <h2>Community Forum</h2>
+            <p>Join our community forum to discuss and share experiences with other parents about vaccination schedules and child healthcare.</p>
+            <a href="#" class="btn">Join the Forum</a>
+        </div>
+
+        <div class="contact-section">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 VaxTracker. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

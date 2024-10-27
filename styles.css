@@ -1,0 +1,403 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-align: center; /* Center-align all text in the body */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #2E8B57; /* Dark Green */
+    color: #fff;
+    padding: -10px 0;
+    position: fixed; /* Fixes the navbar at the top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures the navbar is above other content */
+}
+
+nav h1 {
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    color: #fff;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #98FB98; /* Light Green on hover */
+}
+
+/* Header Styles */
+header {
+    background: #F0FFF0; /* Honeydew (very light green) */
+    color: #2E8B57; /* Dark Green */
+    padding: 50px 0;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+    margin: 0.2px 0; /* Decrease space above and below the paragraph */
+}
+
+/* Adjust body top padding to avoid content hidden under fixed navbar */
+body {
+    padding-top: 25px; /* Adjust based on the height of the navbar */
+}
+
+/* Dashboard Section */
+#dashboard {
+    padding: 1px 0;
+    text-align: center;
+    background-color: #fff0f0; /* Honeydew (very light green) */
+}
+
+.dashboard-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.profile-card {
+    background: #F0FFF0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center; /* Center-align text in profile card */
+}
+
+.profile-card img.child-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Ensures the image remains square and circular */
+}
+
+.progress-chart {
+    background: #F0FFF0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center; /* Center-align text in progress chart */
+}
+
+.progress-bar {
+    background: #E0E0E0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 20px;
+    background: #32CD32; /* Lime Green */
+    width: 60%; /* Adjust this width as per the progress */
+}
+
+/* Vaccination Schedule */
+#vaccination-schedule {
+    background-color: #F0F8FF; /* Alice Blue */
+    padding: 20px;
+}
+
+.schedule-container {
+    max-height: 200px; /* Adjust height to fit approximately 3 rows */
+    overflow-y: auto;
+    border: 1px solid #ddd;
+}
+
+#vaccination-schedule table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#vaccination-schedule th, 
+#vaccination-schedule td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#vaccination-schedule th {
+    background-color: #2E8B57; /* Dark Green */
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#vaccination-schedule tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#vaccination-schedule tr:hover {
+    background-color: #ddd;
+}
+
+/* Style for the status column */
+#vaccination-schedule td:last-child {
+    font-weight: bold;
+}
+
+#vaccination-schedule td:last-child:contains('Completed') {
+    color: #4CAF50; /* Green for completed */
+}
+
+#vaccination-schedule td:last-child:contains('Upcoming') {
+    color: #FFA500; /* Orange for upcoming */
+}
+
+/* Scrollbar styles for webkit browsers */
+.schedule-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.schedule-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.schedule-container::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.schedule-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/* Vaccine Info Cards */
+.vaccine-info-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.vaccine-info-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    flex: 0 0 auto;
+    width: 300px;
+    text-align: center; /* Center-align text in vaccine info card */
+}
+
+.vaccine-info-card h3 {
+    margin-top: 0;
+}
+
+.vaccine-info-card p {
+    margin-left: 0; /* Remove left margin for center alignment */
+}
+
+.vaccine-info-card a {
+    color: #32CD32; /* Lime Green */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.vaccine-info-card a:hover {
+    color: #2E8B57; /* Dark Green */
+}
+
+/* Scroll Buttons */
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #2E8B57; /* Dark Green */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+/* .scroll-btn.left {
+    left: -40px; /* Adjust as needed */
+} */
+
+/* .scroll-btn.right {
+    right: -40px; /* Adjust as needed */
+} */
+
+/* Consultation and Forum */
+section p {
+    margin-left: 0; /* Remove left margin for center alignment */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #32CD32; /* Lime Green */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #2E8B57; /* Dark Green */
+}
+
+/* Contact Section */
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center-align text in form */
+}
+
+form label {
+    margin: 10px 0 5px;
+    text-align: center; /* Center-align text in labels */
+    width: 100%;
+    max-width: 400px;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #32CD32; /* Lime Green */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2E8B57; /* Dark Green */
+}
+
+/* Footer */
+footer {
+    background: #2E8B57; /* Dark Green */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Section Background Colors */
+#dashboard {
+    background-color: #E0FFE0; /* Light Green */
+}
+
+#vaccination-schedule {
+    background-color: #F0F8FF; /* Alice Blue */
+}
+
+.vaccine-info-section {
+    background-color: #FFFACD; /* Lemon Chiffon */
+}
+
+.consultation-section {
+    background-color: #FFEBCD; /* Blanched Almond */
+}
+
+.community-forum-section {
+    background-color: #F5F5DC; /* Beige */
+}
+
+.contact-section {
+    background-color: #FFE4E1; /* Misty Rose */
+}
+
+/* Combined Online Consultation, Community Forum, and Contact Us Section */
+#consultation-community-contact {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of items */
+    gap: 20px; /* Optional: Add some space between items */
+}
+
+/* Online Consultation and Community Forum side by side */
+.consultation-section,
+.community-forum-section {
+    flex: 1; /* Each section takes up equal space */
+    min-width: 300px; /* Ensures sections don't get too narrow */
+    padding: 20px; /* Add padding for content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for visual separation */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    margin: 0 10px; /* Add horizontal margin for spacing */
+}
+
+/* Contact Us section below */
+.contact-section {
+    width: 100%; /* Full width below the two sections */
+    padding: 20px; /* Add padding for content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for visual separation */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    margin-top: 20px; /* Space above the Contact Us section */
+}
+
+/* Responsive design: stack sections vertically on small screens */
+@media (max-width: 768px) {
+    #consultation-community-contact {
+        flex-direction: column; /* Stack sections vertically on small screens */
+    }
+
+    .consultation-section,
+    .community-forum-section,
+    .contact-section {
+        margin: 10px 0; /* Add vertical margin for spacing */
+    }
+}
+
+
+
+
